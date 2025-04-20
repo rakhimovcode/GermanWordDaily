@@ -4,6 +4,7 @@ const { message } = require("telegraf/filters");
 const { getCount,incrementCountIfNewDay} = require("./gotWord");
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
+
 bot.start((ctx) =>{
   const first_name = ctx.from.first_name || '';
   const last_name = ctx.from.last_name || '' ;
